@@ -28,8 +28,8 @@ class Todoitem extends StatelessWidget {
               borderRadius: BorderRadius.circular(18),
               color: Colors.red,
             ),
-            child: Padding(
-              padding: const EdgeInsets.only(right: 18.0, left: 18.0),
+            child: const Padding(
+              padding: EdgeInsets.only(right: 18.0, left: 18.0),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -56,7 +56,7 @@ class Todoitem extends StatelessWidget {
                         }),
                     Text(
                       title,
-                      style: TextStyle(
+                      style: const TextStyle(
                         fontSize: 18,
                       ),
                     ),

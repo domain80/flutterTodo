@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:todo/components/AddDialog.dart';
-import 'package:todo/components/TodoItem.dart';
+import 'package:todo/components/add_dialog.dart';
+import 'package:todo/components/todo_item.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -35,15 +35,15 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Todo App"),
+        title: const Text("Todo App"),
         backgroundColor: Colors.deepPurple[200],
       ),
       floatingActionButton: FloatingActionButton.extended(
         onPressed: () {
           openAddDialog();
         },
-        label: Text("Add"),
-        icon: Icon(Icons.add),
+        label: const Text("Add"),
+        icon: const Icon(Icons.add),
       ),
       body: ListView.builder(
           itemCount: todoList.length,

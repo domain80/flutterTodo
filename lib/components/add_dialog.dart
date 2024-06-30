@@ -18,9 +18,9 @@ class Adddialog extends StatelessWidget {
               Navigator.of(context).pop();
             }
           },
-          child: Text("Add"),
+          child: const Text("Add"),
         ),
-        SizedBox(
+        const SizedBox(
           width: 12,
         ),
         MaterialButton(
@@ -28,18 +28,16 @@ class Adddialog extends StatelessWidget {
           onPressed: () {
             Navigator.of(context).pop();
           },
-          child: Text("Cancel"),
+          child: const Text("Cancel"),
         ),
       ],
       content: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
-          Container(
-            child: TextField(
-              controller: _controller,
-              decoration: InputDecoration(
-                border: OutlineInputBorder(borderSide: BorderSide(width: 1)),
-              ),
+          TextField(
+            controller: _controller,
+            decoration: const InputDecoration(
+              border: OutlineInputBorder(borderSide: BorderSide(width: 1)),
             ),
           ),
         ],
